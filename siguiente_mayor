@@ -1,0 +1,12 @@
+def siguiente_mayor(lista):
+    ordenados=sorted(lista)
+    ordenados.append(-1)
+    lista_final=[]
+    for i in range(len(lista)):
+        lista_final.append(ordenados[ordenados.index(lista[i])+1])
+    print(lista_final)    
+    
+siguiente_mayor([5, 7, 3, 2, 8])
+siguiente_mayor([2, 3, 4, 5])
+siguiente_mayor([1, 0, -1, 8, -72])
+
